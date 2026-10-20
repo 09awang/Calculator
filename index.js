@@ -1,8 +1,27 @@
-sessionStorage.setItem("inputs", "0");
+let currHistorySize = 0;
+const history = new Array(0)
+sessionStorage.setItem("inputs", JSON.stringify(history));
+
+
 
 function equals() {
-    let output = eval(document.querySelector("input").value);
-    sessionStorage.setItem("inputs", eval(document.querySelector("input").value));
-    const result = document.getElementById("output");
-    result.title = output.textContent;
+    document.getElementById("output").textContent = eval(document.getElementById("input").value);
 }
+
+function clickNum(id) {
+    document.getElementById("input").value += id;
+}
+
+function uppies() {
+    document.getElementById("input").value = history.pop();
+}
+
+document.addEventListener("type", (event) => {
+    if (event.key === "Enter") {
+        history.push((document.getElementById("input").value));
+        equals();
+    }
+
+
+    }
+)
