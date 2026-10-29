@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body onload = load()>
+<div class = 'inAndOut'>
+    <input id="input" type="text">
+    <div id="output"> output </div>
+</div>
+<div class = 'grid'>
+    <button id="1" class="buttons" onclick="clickNum(this.id)"> 1 </button>
+    <button id="2" class="buttons" onclick="clickNum(this.id)"> 2 </button>
+    <button id="3" class="buttons" onclick="clickNum(this.id)"> 3 </button>
+    <button id="4" class="buttons" onclick="clickNum(this.id)"> 4 </button>
+    <button id="5" class="buttons" onclick="clickNum(this.id)"> 5 </button>
+    <button id="6" class="buttons" onclick="clickNum(this.id)"> 6 </button>
+    <button id="7" class="buttons" onclick="clickNum(this.id)"> 7 </button>
+    <button id="8" class="buttons" onclick="clickNum(this.id)"> 8 </button>
+    <button id="9" class="buttons" onclick="clickNum(this.id)"> 9 </button>
+</div>
+
+<button id="0" class="buttons" onclick="clickNum(this.id)"> 0 </button>
+<button id="." class="buttons" onclick="clickNum(this.id)"> . </button>
+<button id="(" class="buttons" onclick="clickNum(this.id)"> ( </button>
+<button id=")" class="buttons" onclick="clickNum(this.id)"> ) </button>
+<button id="%" class="buttons" onclick="clickNum(this.id)"> % </button>
+<button id="/" class="buttons" onclick="clickNum(this.id)"> / </button>
+<button id="+" class="buttons" onclick="clickNum(this.id)"> + </button>
+<button id="-" class="buttons" onclick="clickNum(this.id)"> - </button>
+<button id="**" class="buttons" onclick="clickNum(this.id)"> ** </button>
+<button id="*" class="buttons" onclick="clickNum(this.id)"> * </button>
+<button id="up" class="buttons" onclick="uppies()"> up </button>
+<button id="down" class="buttons" onclick="GETDOWNNOW()"> down </button>
+
+<button id="=" class="buttons" onclick="equals()"> = </button>
+<p></p>
+
+</body>
+</html>

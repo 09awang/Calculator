@@ -15,14 +15,25 @@ function clickNum(id) {
 }
 
 function uppies() {
-    // console.log(history[history.length - curIndex-1]);
-    document.getElementById("input").value = history[history.length - curIndex-1];
-    curIndex++;
+    if(history.length - curIndex-1 < 0) {
+        if(document.getElementById("input").value === "") {
+            document.getElementById("input").value = ""
+        }
+    } else {
+        document.getElementById("input").value = history[history.length - curIndex-1];
+        curIndex++;
+    }
 }
 
 function GETDOWNNOW() {
-    document.getElementById("input").value = history[history.length + curIndex-1];
-    curIndex--;
+    if(history.length - curIndex+1 >= history.length ) {
+        if(document.getElementById("input").value === "") {
+            document.getElementById("input").value = ""
+        }
+    } else {
+        document.getElementById("input").value = history[history.length - curIndex+1];
+        curIndex--;
+    }
 }
 
 document.addEventListener("type", (event) => {
