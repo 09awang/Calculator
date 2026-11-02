@@ -11,7 +11,7 @@
     <input id="input" type="text">
     <div id="output"> output </div>
 </div>
-<div class = 'grid'>
+<div class = 'numbers'>
     <button id="1" class="buttons" onclick="clickNum(this.id)"> 1 </button>
     <button id="2" class="buttons" onclick="clickNum(this.id)"> 2 </button>
     <button id="3" class="buttons" onclick="clickNum(this.id)"> 3 </button>
@@ -23,19 +23,23 @@
     <button id="9" class="buttons" onclick="clickNum(this.id)"> 9 </button>
 </div>
 
-<button id="0" class="buttons" onclick="clickNum(this.id)"> 0 </button>
-<button id="." class="buttons" onclick="clickNum(this.id)"> . </button>
-<button id="(" class="buttons" onclick="clickNum(this.id)"> ( </button>
-<button id=")" class="buttons" onclick="clickNum(this.id)"> ) </button>
-<button id="%" class="buttons" onclick="clickNum(this.id)"> % </button>
-<button id="/" class="buttons" onclick="clickNum(this.id)"> / </button>
-<button id="+" class="buttons" onclick="clickNum(this.id)"> + </button>
-<button id="-" class="buttons" onclick="clickNum(this.id)"> - </button>
-<button id="**" class="buttons" onclick="clickNum(this.id)"> ** </button>
-<button id="*" class="buttons" onclick="clickNum(this.id)"> * </button>
-<button id="up" class="buttons" onclick="uppies()"> up </button>
-<button id="down" class="buttons" onclick="GETDOWNNOW()"> down </button>
+<div class = 'operators'>
+    <button id="0" class="buttons" onclick="clickNum(this.id)"> 0 </button>
+    <button id="." class="buttons" onclick="clickNum(this.id)"> . </button>
+    <button id="(" class="buttons" onclick="clickNum(this.id)"> ( </button>
+    <button id=")" class="buttons" onclick="clickNum(this.id)"> ) </button>
+    <button id="%" class="buttons" onclick="clickNum(this.id)"> % </button>
+    <button id="/" class="buttons" onclick="clickNum(this.id)"> / </button>
+    <button id="+" class="buttons" onclick="clickNum(this.id)"> + </button>
+    <button id="-" class="buttons" onclick="clickNum(this.id)"> - </button>
+    <button id="**" class="buttons" onclick="clickNum(this.id)"> ** </button>
+    <button id="*" class="buttons" onclick="clickNum(this.id)"> * </button>
 
+    <div class = 'direction'>
+        <button id="up" class="buttons" onclick="uppies()"> up </button>
+        <button id="down" class="buttons" onclick="GETDOWNNOW()"> down </button>
+    </div>
+</div>
 <button id="=" class="buttons" onclick="equals()"> = </button>
 <p></p>
 
